@@ -1,0 +1,859 @@
+/* Цвета */
+:root {
+    --primary-text-color: rgba(0, 0, 0, 0.8);
+    --title-text-color: #000000;
+    --accent-color: #18a0fb;
+    --primary-white-color: #ffffff;
+}
+
+/* Шрифты */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+
+body {
+    font-family: "Roboto", "Raleway", sans-serif;
+    --main-text: #212121;
+    --side-color: #2196f3;
+    --side-text: #757575;
+    --dark-background: #2f303a;
+    --light-background: #f5f4fa;
+    --svg-gray: #afb1b8;
+    color: var(--main-text);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Фоновые блоки */
+.bg,
+.bg2 {
+    position: relative;
+    background-color: #2f303a;
+    width: 100%;
+    height: 600px;
+}
+
+/* Логотип и цвет акцента */
+.accent-logo {
+    color: black;
+    font-family: "Raleway";
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+}
+
+.accent-logo .dev {
+    color: var(--side-color);
+}
+
+/* Подсказки */
+.tips {
+    position: relative;
+    border-radius: 4px;
+    background-color: #b9b9b9;
+    width: 100%;
+    height: 120px;
+}
+
+/* Белый текст */
+.white-text {
+    position: center;
+    font-size: 44px;
+    letter-spacing: 0.06em;
+    line-height: 60px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    width: 1100px;
+    margin-left: 276px;
+    margin-right: auto;
+    margin-top: 195px;
+}
+
+/* Кнопка */
+.button {
+    position: relative;
+    border-radius: 4px;
+    background-color: #2196f3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    width: 200px;
+    height: 50px;
+    position: relative;
+    font-size: 16px;
+    letter-spacing: 0.06em;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Текст кнопки */
+.botton-text,
+.botton-grey,
+.black-text,
+.grey-text {
+    position: relative;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    line-height: 24px;
+    font-family: var(--font-roboto);
+    text-align: left;
+    display: inline-block;
+}
+
+/* Черный текст */
+.black-text {
+    color: #212121;
+}
+
+/* Серый текст */
+.grey-text {
+    color: #757575;
+}
+
+/* При наведении на ссылку */
+a:hover {
+    color: #0075ff;
+}
+
+/* Футер */
+footer {
+    background-color: #2f303a;
+}
+
+/* Логотип в футере */
+.bottom-main-text-logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30.52px;
+    color: white;
+}
+/* Контейнеры для ссылок в футере */
+.linkconteiner {
+    display: flex;
+    justify-content: center;
+}
+
+/* Контейнеры для текста и адреса в футере */
+.address-text,
+.footer-contact-text,
+.support-text-footer {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    flex-shrink: 0;
+}
+
+/* Круглые иконки в футере */
+.circle-icon-footer {
+    fill: rgba(255, 255, 255, 0.10);
+}
+
+/* Иконки социальных сетей в футере */
+.sns-icon-footer {
+    fill: white;
+}
+
+/* При наведении на иконку в футере */
+.SNS-link:hover .circle-icon-footer {
+    fill: #2196F3;
+}
+
+.SNS-link:hover .sns-icon-footer {
+    fill: rgb(235, 235, 235);
+}
+
+/* Навигационное меню */
+nav ul li {
+    background-color: #212121;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.28px;
+    list-style: none;
+    display: inline-block;
+    margin: 35px 90px 45px 20px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Гибкая шапка */
+.flexh {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.28px;
+}
+
+/* Убираем маргины и паддинги у кнопок и заголовков */
+button,
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Шапка */
+.header {
+    display: flex;
+    justify-content: center;
+    flex-basis: 1170px;
+    height: 80px;
+}
+
+/* Секция "О нас" */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 290px;
+}
+
+/* Навигационный блок в шапке */
+.headernav {
+    display: flex;
+    align-items: center;
+    flex-basis: 528px;
+}
+
+/* Контактная информация в шапке */
+.headercont {
+    display: flex;
+    align-items: center;
+    flex-basis: 333px;
+    justify-content: space-between;
+}
+
+/* Логотип в шапке */
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+
+/* Ссылки в шапке */
+header .link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Навигационный текст в шапке */
+header .nav {
+    color: var(--gr-color);
+}
+
+/* Основной заголовок в основной секции */
+main h1 {
+    color: var(--wt-color);
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Основной фон */
+.m-background {
+    height: 600px;
+    width: 100%;
+    background-color: #2F303A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Основной текст в основной секции */
+.m-background>span {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+/* Секция "Заказать" */
+.zamovutu {
+    height: 50px;
+    width: 200px;
+    background-color: var(--st-color);
+    color: var(--wt-color);
+    font-size: 16px;
+    font-weight: 700px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+.zamovutu:hover {
+    background-color: #188CE8;
+}
+
+/* Гибкая секция "Особенности" */
+.flex {
+    width: 1170px;
+    height: 251px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1170px;
+}
+
+/* Заголовок секции "Особенности" */
+.flex h3 {
+    text-transform: uppercase;
+    color: var(--gr-color);
+}
+
+/* Блоки с особенностями */
+.flex>li {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 251px;
+}
+
+/* Внутренний контейнер для блока */
+.flex>li>div {
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Заголовок блока особенности */
+.flex>li>h3 {}
+
+/* Текст блока особенности */
+.flex>li>p {}
+
+/* Секция "Специализация" */
+.specialisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Заголовок секции "Специализация" */
+.specialisation h2 {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Изображение в секции "Специализация" */
+.specialisation img {
+    border-radius: 10px;
+}
+
+/* Гибкая секция "Перечень работ" */
+.perelikrobit {
+    display: flex;
+    justify-content: space-between;
+    height: 386px;
+    width: 1170px;
+}
+
+/* Блоки с перечнем работ */
+.opus {
+    width: 1170px;
+    height: 251px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1170px;
+}
+
+/* Заголовок блока с перечнем работ */
+.opus h3 {
+    text-transform: uppercase;
+    color: var(--gr-color);
+}
+
+/* Контейнер для блока с перечнем работ */
+.opus>li {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 251px;
+}
+
+/* Заголовок блока с перечнем работ */
+.opus>li>h3 {}
+
+/* Текст блока с перечнем работ */
+.opus>li>p {}
+
+/* Внутренний контейнер для блока с перечнем работ */
+.opus>li>div {
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Секция "Наша команда" */
+.ourteam {
+    background-color: #f5f4fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Список в секции "Наша команда" */
+.ourteam>ul {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+}
+
+/* Элемент списка в секции "Наша команда" */
+.ourteam>ul>li {
+    background-color: var(--wt-color);
+    box-shadow: 0px 2px 3px 0.5px var(--bgs-color);
+    height: 428px;
+}
+
+/* Заголовок секции "Наша команда" */
+.ourteam h2 {
+    font-weight: 700;
+    font-size: 36px;
+    flex-basis: 90px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Должность в секции "Наша команда" */
+.ourteam .posada {
+    font-size: 16px;
+    color: var(--sd-color);
+    text-align: center;
+    width: 100%;
+}
+
+/* Контейнер для имени в секции "Наша команда" */
+.name {
+    font-weight: 800;
+    color: var(--gr-color);
+    text-align: center;
+    width: 100%;
+}
+
+/* Ссылка в секции "Наша команда" */
+.link {
+    height: 44px;
+    width: 44px;
+    background-color: var(--wt-color);
+    border-radius: 40px;
+}
+/* Секция "Контакты" в подвале */
+footer {
+    background-color: #2f303a;
+}
+
+/* Текст в секции "Контакты" */
+.bottom-main-text-logo {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30.52px;
+    color: white;
+}
+
+/* Элемент списка в секции "Контакты" */
+.li {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+/* Иконка номера телефона при наведении */
+.number-header:hover {
+    fill: hsl(199, 98%, 48%);
+}
+
+/* Круглая иконка */
+.circle-icon {
+    fill: transparent;
+}
+
+/* Иконка социальных сетей */
+.sns-icon {
+    fill: #AFB1B8;
+}
+
+/* Иконка социальных сетей при наведении */
+.SNS-link:hover .circle-icon {
+    fill: #2196F3;
+}
+
+/* Иконка социальных сетей при наведении */
+.SNS-link:hover .sns-icon {
+    fill: rgb(235, 235, 235);
+}
+
+/* Кнопка подписки */
+.subscribe {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #FFF;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.96px;
+}
+
+/* Иконка внутри кнопки подписки */
+.icon-bottom {
+    fill: white;
+}
+
+/* Поле ввода электронной почты */
+.email-form {
+    width: 358px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.30);
+    background: rgba(33, 150, 243, 0.00);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.48px;
+}
+
+/* Текст над полем ввода электронной почты */
+.form-text {
+    color: #FFF;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+/* Текст кнопки подписки */
+.email .sub-button {
+    width: 200px;
+    height: 50px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--side-color);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-align: center;
+    border: 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.875;
+    letter-spacing: 0.96px;
+}
+
+/* Иконка внутри кнопки подписки */
+.email .sub-button .icon {
+    fill: white;
+}
+/* Секция "О Нас" в шапке */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 290px;
+}
+
+/* Навигационное меню в шапке */
+.headernav {
+    display: flex;
+    align-items: center;
+    flex-basis: 528px;
+}
+
+/* Контейнер в шапке */
+.headercont {
+    display: flex;
+    align-items: center;
+    flex-basis: 333px;
+    justify-content: space-between;
+}
+
+/* Логотип */
+.logo {
+    text-decoration: none;
+    color: #000;
+    font-size: 26px;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+}
+
+/* Ссылка в шапке */
+header .link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Текст навигационного меню в шапке */
+header .nav {
+    color: var(--gr-color);
+}
+
+/* Заголовок в основном контенте */
+main h1 {
+    color: var(--wt-color);
+    font-size: 44px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+/* Фон основного контента */
+.m-background {
+    height: 600px;
+    width: 100%;
+    background-color: #2F303A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* Оформление кнопки "Заказать" */
+.zamovutu {
+    height: 50px;
+    width: 200px;
+    background-color: var(--st-color);
+    color: var(--wt-color);
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.75);
+}
+
+/* Центрирование элементов в основном контенте */
+.centner {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Элементы внутри блока "Заказать" при наведении */
+.zamovutu:hover {
+    background-color: #188CE8;
+}
+
+/* Заголовок основного блока */
+h1 {
+    text-align: center;
+    flex-basis: 130px;
+}
+
+/* Контейнер для элементов в основном контенте */
+.flex {
+    width: 1170px;
+    height: 251px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1170px;
+}
+
+/* Заголовок подкатегории в основном контенте */
+.flex h3 {
+    text-transform: uppercase;
+    color: var(--gr-color);
+}
+
+/* Элемент списка в основном контенте */
+.flex>li {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 251px;
+}
+
+/* Блок с текстом и фоном в основном контенте */
+.flex>li>div {
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Подзаголовок в основном контенте */
+.flex>li>h3 {}
+
+/* Текст в основном контенте */
+.flex>li>p {}
+
+/* Секция "Специализация" в основном контенте */
+.specialisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Заголовок в секции "Специализация" */
+.specialisation h2 {
+    font-weight: 700;
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Изображение в секции "Специализация" */
+.specialisation img {
+    border-radius: 10px;
+}
+
+/* Секция "Перечень работ" в основном контенте */
+.perelikrobit {
+    display: flex;
+    justify-content: space-between;
+    height: 386px;
+    width: 1170px;
+}
+
+/* Блок в секции "Перечень работ" в основном контенте */
+.opus {
+    width: 1170px;
+    height: 251px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 1170px;
+}
+
+/* Заголовок подкатегории в секции "Перечень работ" */
+.opus h3 {
+    text-transform: uppercase;
+    color: var(--gr-color);
+}
+
+/* Элемент списка в секции "Перечень работ" */
+.opus>li {
+    height: 251px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 251px;
+}
+
+/* Подзаголовок в секции "Перечень работ" */
+.opus>li>h3 {}
+
+/* Текст в секции "Перечень работ" */
+.opus>li>p {}
+
+/* Блок с текстом и фоном в секции "Перечень работ" */
+.opus>li>div {
+    height: 120px;
+    width: 270px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Секция "Наша Команда" в основном контенте */
+.ourteam {
+    background-color: #f5f4fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Список в секции "Наша Команда" */
+.ourteam>ul {
+    display: flex;
+    width: 1170px;
+    justify-content: space-between;
+}
+
+/* Элемент списка в секции "Наша Команда" */
+.ourteam>ul>li {
+    background-color: var(--wt-color);
+    box-shadow: 0px 2px 3px 0.5px var(--bgs-color);
+    height: 428px;
+}
+
+/* Заголовок в секции "Наша Команда" */
+.ourteam h2 {
+    font-weight: 700;
+    font-size: 36px;
+    flex-basis: 90px;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Должность в секции "Наша Команда" */
+.ourteam .posada {
+    font-size: 16px;
+    color: var(--sd-color);
+    text-align: center;
+    width: 100%;
+}
+
+/* Контейнер с именем в секции "Наша Команда" */
+.linkconteiner {
+    display: flex;
+    justify-content: center;
+}
+
+/* Имя в секции "Наша Команда" */
+.name {
+    font-weight: 800;
+    color: var(--gr-color);
+    text-align: center;
+    width: 100%;
+}
+
+/* Ссылка в секции "Наша Команда" */
+.link {
+    height: 44px;
+    width: 44px;
+    background-color: var(--wt-color);
+    border-radius: 40px;
+}
